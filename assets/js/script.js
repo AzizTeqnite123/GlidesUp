@@ -10,7 +10,9 @@ var swiper = new Swiper(".prodSlider", {
 var swiper = new Swiper(".testiSlider", {
   slidesPerView: 3,
   spaceBetween: 30,
-  centeredSlides: true, initialSlide: 0,loop: true,
+  centeredSlides: true,
+  initialSlide: 0,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
