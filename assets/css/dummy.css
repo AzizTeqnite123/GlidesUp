@@ -1,156 +1,395 @@
-.how-work_sides {
-    position: relative;
-}
+@media only screen and (max-width : 576px) {
 
-.how-work_sides:before,
-.how-work_sides:after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    top: 0;
-    bottom: 0;
-    background: linear-gradient(rgba(216, 170, 111, 0) 0%, #D8AA6F 52.5%, rgba(216, 170, 111, 0) 100%);
-}
-
-.how-work_sides:before {
-    left: 0;
-}
-
-.how-work_sides:after {
-    right: 0;
-}
-
-.home-posts-sec {
-    .elementor-post__text {
-        display: flex !important;
-        flex-direction: column;
+    /* HOME PAGE RESPONSIVE CSS */
+    .container,
+    .page-width {
+        padding: 0 15px;
     }
 
-    .elementor-post__meta-data {
-        order: -1;
-    }
-}
-
-body.home header.elementor-location-header {
-    background: transparent !important;
-    position: absolute !important;
-    top: 0;
-    width: 100%;
-
-    .e-parent {
-        background: transparent !important;
+    .mainBanRow {
+        padding: 40px 0px;
     }
 
-    .e-con-inner {
-        border-bottom: 1px solid #c48b7880;
-    }
-}
-
-body.home .flipster--coverflow :is(.flipster__item--past.flipster__item--past-1, .flipster__item--future.flipster__item--future-1) .flipster__item__content {
-    -webkit-transform: scale(0.85) !important;
-    transform: scale(0.85) !important;
-}
-
-body.home .flipster--coverflow :is(.flipster__item--past.flipster__item--past-2, .flipster__item--future.flipster__item--future-2) .flipster__item__content {
-    -webkit-transform: scale(0.65) !important;
-    transform: scale(0.65) !important;
-}
-
-body.home .flipster--coverflow :is(.flipster__item--past.flipster__item--past-3, .flipster__item--future.flipster__item--future-3) .flipster__item__content {
-    -webkit-transform: scale(0.55) !important;
-    transform: scale(0.55) !important;
-}
-
-.about-clmn-hldr>.e-con-inner {
-    margin-left: 0;
-}
-
-
-
-.test-carousel .elementor-swiper-button svg * {
-    stroke: #fff;
-}
-
-.test-carousel .elementor-swiper-button:hover svg * {
-    stroke: #3D3D3D;
-}
-
-
-@media only screen and (min-width : 1025px) {
-
-    .head-menu .menu-responsive {
-        display: none !important;
+    .mainBanRow {
+        max-width: 290px;
     }
 
-
-}
-
-
-@media only screen and (max-width : 1025px) {
-    .head-menu .menu-responsive a.elementor-item {
-        background: #D8AA6F !important;
-        font-size: 18px !important;
-        width: fit-content;
-        margin: 10px 0px 20px 10px;
-        color: #fff;
-        padding: 16px 26px;
+    .main_heading_h1 {
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 5px;
     }
-}
 
-
-@media only screen and (max-width : 767px) {
-    .head-menu .menu-responsive a.elementor-item {
-        font-size: 16px !important;
-        padding: 14px 20px;
+    .main_banner_desc {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 5px;
     }
+
+    .mainBtn :is(a, button, input[type="submit"]) {
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 13px;
+        padding: 10px 20px;
+    }
+
+    .mainBanner {
+        height: 500px;
+    }
+
+    .mainBanner::after {
+        height: 90px;
+    }
+
+    .paddleBoard {
+        padding: 10px 0 40px;
+    }
+
+    .heading_h2 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .headingHldrSite {
+        margin-bottom: 30px;
+    }
+
+    .paddleBoardRow {
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .padImg {
+        height: 35px;
+        width: 35px;
+    }
+
+    .padImg img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .padCnt h3 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .padCnt p {
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .shopMainSec {
+        padding: 40px 0;
+    }
+
+    .headingHldrSite {
+        margin-bottom: 20px;
+    }
+
+    .headingHldrSite p {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 5px !important;
+    }
+
+    .product-card-wrapper .card__inner .card__media {
+        height: 220px;
+    }
+
+    body .swiper .swiper-button-next,
+    body .swiper .swiper-button-prev {
+        height: 25px;
+        width: 25px;
+    }
+
+    body .swiper .swiper-button-next::after,
+    body .swiper .swiper-button-prev::after {
+        font-size: 12px;
+    }
+
+    .product-card-wrapper .card__inner .card__badge {
+        height: 30px;
+        width: 30px;
+        top: 35%;
+    }
+
+    .product-card-wrapper .card__inner .card__badge .badge {
+        font-size: 9px;
+        line-height: 9px;
+    }
+
+    .prodCardBtn a {
+        font-size: 12px;
+        line-height: 13px;
+        padding: 10px;
+    }
+
+    .product-card-wrapper .card__content {
+        margin-top: 10px;
+    }
+
+    .product-card-wrapper .card__content .card__heading {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .product-card-wrapper .card__content .card-information {
+        margin-top: 5px;
+    }
+
+    .product-card-wrapper .card__content .card-information .price__container .price__regular .price-item {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .product-card-wrapper .card__content .card-information .price__container .price__sale .price-item {
+        font-size: 10px;
+        line-height: 10px;
+        padding: 4px 8px 2px;
+    }
+
+    .whyGlide {
+        padding: 100px 0;
+        background-position: -70px;
+    }
+
+    .whyGlideLeft h3 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .whyGlideLeft p {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 10px;
+    }
+
+    .testimonialMain {
+        padding: 40px 0 20px;
+    }
+
+    body .swiper-pagination .swiper-pagination-bullet-active {
+        width: 45px;
+    }
+
+    .comparisonTable::before {
+        height: 110px;
+    }
+
+    .comparisonTable {
+        padding: 130px 0;
+    }
+
+    .comTbleRow table thead th {
+        padding: 15px 10px;
+    }
+
+    .comTbleRow {
+        overflow: hidden;
+        overflow-x: visible;
+    }
+
+    .comTbleRow table thead th {
+        font-size: 14px;
+        line-height: 15px;
+        text-wrap: nowrap;
+    }
+
+    .comTbleRow table thead tr th:nth-child(2)::before,
+    .comTbleRow table thead tr th:nth-child(3)::before {
+        left: 10px;
+        height: 23px;
+        width: 23px;
+    }
+
+    .comTbleRow table thead tr th:nth-child(2),
+    .comTbleRow table thead tr th:nth-child(3) {
+        padding-left: 40px;
+    }
+
+    .comTbleRow table tbody tr td {
+        padding: 10px;
+    }
+
+    .comTbleRow table tbody tr td:nth-child(2)::before,
+    .comTbleRow table tbody tr td:nth-child(3)::before {
+        left: 10px;
+        height: 16px;
+        width: 16px;
+    }
+
+    .comTbleRow table tbody tr td:nth-child(2),
+    .comTbleRow table tbody tr td:nth-child(3) {
+        padding-left: 34px;
+    }
+
+    .comTbleRow table tbody tr td {
+        font-size: 12px;
+        line-height: 15px;
+        text-wrap: nowrap;
+    }
+
+    .comparisonTable::after {
+        height: 240px;
+    }
+
+    .testiBox {
+        padding: 15px;
+    }
+
+    .ratingsStar img {
+        height: 13px;
+        width: 13px;
+    }
+
+    .ratingsStar {
+        gap: 4px;
+    }
+
+    .descTesti p {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 10px;
+    }
+
+    .testiAuthDet {
+        margin-top: 20px;
+    }
+
+    .tstAuthDetLft img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .tstAuthDetLftSm h4,
+    .tstAuthDetLftSm p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .tstAuthDetRgt {
+        height: 30px;
+        width: 30px;
+    }
+
+    .instaGallSec {
+        margin: 40px 0;
+    }
+
+    .footerTop {
+        padding: 30px 0;
+        margin-top: 40px;
+    }
+
+    .footTopRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footSecBx:not(:first-child) {
+        padding-left: 0;
+    }
+
+    .footSecBx {
+        padding-bottom: 20px;
+    }
+
+    .footSecBx:last-child {
+        padding-bottom: 0;
+    }
+
+    .footSecBx:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #282828;
+    }
+
+    .footSecBx p {
+        max-width: 90%;
+    }
+
+    .footSecBx p:not(:first-child) {
+        margin-top: 7px;
+    }
+
+    .NewsLetterFormFt {
+        margin-top: 20px;
+    }
+
+    .mainFootRowTop {
+        gap: 30px;
+        padding: 30px 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footLeft {
+        grid-column: span 1;
+    }
+
+    .footLinks {
+        margin-left: 0;
+    }
+
+    .footLeft {
+        height: 30px;
+        width: 100px;
+    }
+
+    .footLinks h3 {
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .footLinks ul li a {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .footLinks ul {
+        margin-top: 15px;
+        gap: 5px;
+    }
+
+    .ftpfrmhldr input {
+        height: 35px;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 10px;
+    }
+
+    .ftpfrmhldr input::placeholder {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .ftpfrmhldr .mainBtn {
+        height: 35px;
+        width: 60px;
+        min-width: 60px;
+    }
+
+    .ftpfrmhldr .mainBtn button {
+        padding: 7px;
+    }
+
+    .mainFotBotRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mainFotBotRowleft p {
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    .mainFotBotRowright {
+        margin-right: auto;
+    }
+
+    .whyGlideLeft {
+        max-width: 230px;
+    }
+
+    /* HOME PAGE RESPONSIVE CSS */
+
 }
-
-
-/* post hldr css */
-
-.post-hldr article.elementor-post .elementor-post__card {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-}
-
-.post-hldr article.elementor-post .elementor-post__card .elementor-post__thumbnail__link {
-    order: 1;
-    position: relative;
-    grid-column: span 2;
-}
-
-.post-hldr article.elementor-post .elementor-post__card .elementor-post__meta-data {
-    order: 2;
-    position: relative;
-    border: none;
-    padding: 0;
-    padding-bottom: 5px;
-}
-
-.post-hldr article.elementor-post .elementor-post__card .elementor-post__badge {
-    order: 3;
-    position: relative;
-    padding: 0;
-    padding-left: 20px;
-}
-
-.post-hldr article.elementor-post .elementor-post__card .elementor-post__badge::before {
-    content: '';
-    background: #C48B78;
-    height: 5px;
-    width: 5px;
-    border-radius: 5px;
-    position: absolute;
-    left: 7px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.post-hldr article.elementor-post .elementor-post__card .elementor-post__text {
-    order: 4;
-    position: relative;
-    grid-column: span 2;
-}
-
-
-/* post hldr css */

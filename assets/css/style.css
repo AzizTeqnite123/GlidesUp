@@ -294,6 +294,11 @@ body .swiper .swiper-button-prev::after {
 
 .product-card-wrapper {
     position: relative;
+    transition: all ease .3s;
+}
+
+.product-card-wrapper:hover .card__inner::after {
+    background: rgba(233, 208, 182, 0.549)
 }
 
 .product-card-wrapper .card__inner {
@@ -302,6 +307,7 @@ body .swiper .swiper-button-prev::after {
     position: relative;
     border-radius: 10px;
     padding: 10px;
+    transition: all ease .3s;
 }
 
 .product-card-wrapper .card__inner::after {
@@ -314,11 +320,18 @@ body .swiper .swiper-button-prev::after {
     left: 0;
     bottom: 0;
     z-index: -1;
+    transition: all ease .3s;
 }
 
 .product-card-wrapper .card__inner .card__media {
     height: 360px;
     width: 100%;
+    overflow: hidden;
+    transition: all ease .3s;
+}
+
+.product-card-wrapper:hover .card__media .media img {
+    transform: scale(1.1);
 }
 
 .product-card-wrapper .card__inner .card__media .media {
@@ -330,6 +343,7 @@ body .swiper .swiper-button-prev::after {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    transition: all ease .3s;
 }
 
 .product-card-wrapper .card__inner .card__badge {
@@ -366,35 +380,10 @@ body .swiper .swiper-button-prev::after {
     padding: 12px 30px;
     border-radius: 100px;
     display: block;
-    width: 100%;
+    width: 100% !important;
     position: relative;
     overflow: hidden;
-}
-
-.prodCardBtn a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -30px;
-    width: 10%;
-    background-color: #000;
-    height: 100%;
-    border-radius: 1000px;
-    transition: all .3s linear;
-    z-index: -1;
-}
-
-.prodCardBtn a:hover {
-    color: #fff;
-    background: #000;
-}
-
-.prodCardBtn a:hover::before {
-    right: unset;
-    left: 0;
-    width: 100%;
-    transform: scale(1.2);
-    transition: all .3s linear;
+    margin-top: 0 !important;
 }
 
 .product-card-wrapper .card__content {
@@ -409,6 +398,10 @@ body .swiper .swiper-button-prev::after {
     letter-spacing: 0%;
     text-transform: none;
     color: #282828;
+}
+
+.product-card-wrapper:hover .card__content .card__heading a {
+    color: #F79A26;
 }
 
 .product-card-wrapper .card__content .card__heading a {
@@ -466,7 +459,7 @@ body .swiper .swiper-button-prev::after {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-position: center;
+    background-position: top;
     z-index: 1;
 }
 
@@ -491,11 +484,10 @@ body .swiper .swiper-button-prev::after {
     line-height: 24px;
     letter-spacing: 0%;
     color: #282828;
-    text-transform: capitalize;
 }
 
 .whyGlideLeft {
-    max-width: 550px;
+    max-width: 540px;
 }
 
 /* WHY GLIDE */
@@ -683,7 +675,7 @@ body .swiper-pagination .swiper-pagination-bullet-active {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     z-index: 1;
 }
 
