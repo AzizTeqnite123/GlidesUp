@@ -1,0 +1,974 @@
+@media only screen and (max-width : 1200px) {
+    /* HOME PAGE RESPONSIVE CSS */
+
+    .mainBanRow {
+        padding: 100px 0;
+    }
+
+    .mainFootRowTop {
+        grid-template-columns: 18% 28% 20% 26%;
+    }
+
+    .paddleBoard {
+        padding: 40px 0 100px;
+    }
+
+    .shopMainSec {
+        padding: 100px 0;
+    }
+
+    .testimonialMain {
+        padding: 100px 0 50px;
+    }
+
+    .testimonialMain .swiper {
+        padding-bottom: 50px;
+    }
+
+    .instaGallSec {
+        margin: 100px 0;
+    }
+
+    .footerTop {
+        margin-top: 100px;
+    }
+
+    /* HOME PAGE RESPONSIVE CSS */
+}
+
+@media only screen and (max-width : 1024px) {
+    /* HOME PAGE RESPONSIVE CSS */
+
+    .mainBanRow {
+        max-width: 600px;
+    }
+
+    .main_heading_h1 {
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    .main_banner_desc {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .mainBanRow {
+        padding: 80px 0;
+    }
+
+    .mainBanner {
+        height: 800px;
+    }
+
+    .mainBanner::after {
+        height: 210px;
+    }
+
+    .paddleBoard {
+        padding: 30px 0 80px;
+    }
+
+    .heading_h2 {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .headingHldrSite {
+        margin-bottom: 50px;
+    }
+
+    .paddleBoardRow {
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .padBox {
+        padding: 20px;
+    }
+
+    .padImg {
+        height: 50px;
+        width: 50px;
+    }
+
+    .padImg img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .padCnt {
+        margin-top: 25px;
+    }
+
+    .padCnt h3 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .shopMainSec {
+        padding: 80px 0;
+    }
+
+    .product-card-wrapper .card__inner .card__media {
+        height: 300px;
+    }
+
+    body .swiper .swiper-button-next,
+    body .swiper .swiper-button-prev {
+        height: 35px;
+        width: 35px;
+    }
+
+    body .swiper .swiper-button-next::after,
+    body .swiper .swiper-button-prev::after {
+        font-size: 16px;
+    }
+
+    .product-card-wrapper .card__content .card-information {
+        margin-top: 10px;
+    }
+
+    .product-card-wrapper .card__content .card-information .price__container .price__regular .price-item {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .product-card-wrapper .card__content .card-information .price__container .price__sale .price-item {
+        font-size: 13px;
+        line-height: 13px;
+        padding: 4px 10px 2px;
+    }
+
+    .whyGlide {
+        padding: 250px 0;
+    }
+
+    .whyGlideLeft {
+        max-width: 540px;
+    }
+
+    .mainBtn :is(a, button, input[type="submit"]) {
+        margin-top: 40px;
+    }
+
+    .testimonialMain {
+        padding: 80px 0 40px;
+    }
+
+    .testiBox {
+        padding: 30px 20px;
+    }
+
+    .ratingsStar img {
+        height: 18px;
+        width: 18px;
+    }
+
+    .descTesti p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .tstAuthDetLft img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .tstAuthDetLftSm h4 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .tstAuthDetRgt {
+        height: 40px;
+        width: 40px;
+    }
+
+    .testimonialMain .swiper {
+        padding-bottom: 40px;
+    }
+
+    .comparisonTable::before {
+        height: 200px;
+    }
+
+    .comparisonTable {
+        padding: 230px 0;
+    }
+
+    .comparisonTable::after {
+        height: 400px;
+    }
+
+    .comTbleRow table thead th {
+        padding: 20px;
+    }
+
+    .comTbleRow table thead th {
+        font-size: 17px;
+        line-height: 17px;
+    }
+
+    .comTbleRow table thead tr th:nth-child(2)::before,
+    .comTbleRow table thead tr th:nth-child(3)::before {
+        left: 20px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .comTbleRow table thead tr th:nth-child(2),
+    .comTbleRow table thead tr th:nth-child(3) {
+        padding-left: 65px;
+    }
+
+    .comTbleRow table tbody tr td {
+        padding: 20px;
+    }
+
+    .comTbleRow table tbody tr td:nth-child(2)::before,
+    .comTbleRow table tbody tr td:nth-child(3)::before {
+        left: 20px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .comTbleRow table tbody tr td:nth-child(2),
+    .comTbleRow table tbody tr td:nth-child(3) {
+        padding-left: 52px;
+    }
+
+    body .swiper-pagination .swiper-pagination-bullet-active {
+        width: 60px;
+    }
+
+    .instaGallSec {
+        margin: 80px 0;
+    }
+
+    .footerTop {
+        margin-top: 80px;
+    }
+
+    .footerTop {
+        padding: 60px 0;
+    }
+
+    .footSecBx .mainBtn a {
+        margin-top: 30px;
+    }
+
+    .footerTop::before {
+        height: 100px;
+    }
+
+    .footTopRow {
+        gap: 20px;
+    }
+
+    .footSecBx:not(:first-child) {
+        padding-left: 10px;
+    }
+
+    .footSecBx h3 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .footSecBx p {
+        font-size: 14px;
+        line-height: 17px;
+        max-width: 200px;
+    }
+
+    .footSecBx p img {
+        height: 22px;
+        width: 22px;
+    }
+
+    .ftpfrmhldr input {
+        height: 40px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .ftpfrmhldr input::placeholder {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .ftpfrmhldr .mainBtn {
+        height: 40px;
+        width: 50px;
+        min-width: 50px;
+    }
+
+    .ftpfrmhldr .mainBtn button {
+        padding: 8px;
+    }
+
+    .mainFootRowTop {
+        padding: 60px 0;
+    }
+
+    .mainFootRowTop {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 50px;
+        grid-column-gap: 10px;
+    }
+
+    .footLeft {
+        grid-column: span 3;
+    }
+
+    .mainFotBotRow {
+        padding: 20px 0;
+    }
+
+    .footLeft {
+        height: 40px;
+        width: 130px;
+    }
+
+    .footLinks ul {
+        margin-top: 20px;
+    }
+
+    .footLinks h3 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .footLinks ul li a {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .product-card-wrapper .card__inner .card__badge {
+        height: 50px;
+        width: 50px;
+    }
+
+    .product-card-wrapper .card__inner .card__badge .badge {
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    .product-card-wrapper .card__inner .card__media {
+        height: 250px;
+    }
+
+    .product-card-wrapper .card__inner .card__badge {
+        height: 40px;
+        width: 40px;
+    }
+
+    .product-card-wrapper .card__inner .card__badge .badge {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    body .swiper .swiper-button-next,
+    body .swiper .swiper-button-prev {
+        height: 30px;
+        width: 30px;
+    }
+
+    .product-card-wrapper .card__content {
+        margin-top: 15px;
+    }
+
+    .product-card-wrapper .card__content .card-information .price__container .price__regular .price-item {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .product-card-wrapper .card__content .card-information .price__container .price__sale .price-item {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 4px 8px 2px;
+    }
+
+    .whyGlideLeft h3 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .mainFotBotRowleft p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    /* HOME PAGE RESPONSIVE CSS */
+}
+
+@media only screen and (max-width : 768px) {
+
+    /* HOME PAGE RESPONSIVE CSS */
+    .main_heading_h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .main_banner_desc {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .mainBtn :is(a, button, input[type="submit"]) {
+        margin-top: 30px;
+    }
+
+    .mainBanRow {
+        padding: 60px 0px;
+    }
+
+    .mainBanRow {
+        max-width: 500px;
+    }
+
+    .mainBanner {
+        height: 600px;
+    }
+
+    .mainBanner::after {
+        height: 160px;
+    }
+
+    .paddleBoard {
+        padding: 20px 0 60px;
+    }
+
+    .headingHldrSite {
+        margin-bottom: 40px;
+    }
+
+    .heading_h2 {
+        font-size: 28px;
+        line-height: 31px;
+    }
+
+    .padBox {
+        border-radius: 10px;
+    }
+
+    .paddleBoardRow {
+        gap: 15px;
+    }
+
+    .padBox {
+        padding: 15px;
+    }
+
+    .padImg {
+        height: 40px;
+        width: 40px;
+    }
+
+    .padImg img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .padCnt {
+        margin-top: 20px;
+    }
+
+    .padCnt h3 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .shopMainSec {
+        padding: 60px 0;
+    }
+
+    .whyGlide {
+        padding: 150px 0;
+    }
+
+    .whyGlideLeft h3 {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    .whyGlideLeft p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 15px;
+    }
+
+    .mainBtn :is(a, button, input[type="submit"]) {
+        margin-top: 25px;
+    }
+
+    .whyGlideLeft {
+        max-width: 400px;
+    }
+
+    .testimonialMain {
+        padding: 60px 0 30px;
+    }
+
+    .testiBox {
+        padding: 20px;
+    }
+
+    .comparisonTable {
+        padding: 150px 0;
+    }
+
+    .comparisonTable::before {
+        height: 150px;
+    }
+
+    .comparisonTable::after {
+        height: 340px;
+    }
+
+    .comTbleRow table thead th:last-child {
+        border-radius: 0 10px 0 0;
+    }
+
+    .comTbleRow table thead th:first-child {
+        border-radius: 10px 0 0 0;
+    }
+
+    .instaGallSec {
+        margin: 60px 0;
+    }
+
+    .footerTop {
+        margin-top: 60px;
+    }
+
+    .footerTop::before {
+        height: 80px;
+    }
+
+    .footSecBx h3 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .footSecBx:not(:first-child) {
+        padding-left: 5px;
+    }
+
+    .footSecBx p {
+        max-width: 160px;
+    }
+
+    .footerTop {
+        padding: 40px 0;
+    }
+
+    .mainFootRowTop {
+        padding: 40px 0;
+    }
+
+    .mainFootRowTop {
+        grid-row-gap: 40px;
+    }
+
+    .comTbleRow table tbody tr:last-child td:first-child {
+        border-radius: 0 0px 0px 10px;
+    }
+
+    .comTbleRow table tbody tr:last-child td:last-child {
+        border-radius: 0 0px 10px 0px;
+    }
+
+    /* HOME PAGE RESPONSIVE CSS */
+}
+
+@media only screen and (max-width : 576px) {
+
+    /* HOME PAGE RESPONSIVE CSS */
+    .container,
+    .page-width {
+        padding: 0 15px;
+    }
+
+    .mainBanRow {
+        padding: 40px 0px;
+    }
+
+    .mainBanRow {
+        max-width: 290px;
+    }
+
+    .main_heading_h1 {
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .main_banner_desc {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+
+    .mainBtn :is(a, button, input[type="submit"]) {
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 13px;
+        padding: 10px 20px;
+    }
+
+    .mainBanner {
+        height: 500px;
+    }
+
+    .mainBanner::after {
+        height: 90px;
+    }
+
+    .paddleBoard {
+        padding: 10px 0 40px;
+    }
+
+    .heading_h2 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .headingHldrSite {
+        margin-bottom: 30px;
+    }
+
+    .paddleBoardRow {
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .padImg {
+        height: 35px;
+        width: 35px;
+    }
+
+    .padImg img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .padCnt h3 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .padCnt p {
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .shopMainSec {
+        padding: 40px 0;
+    }
+
+    .headingHldrSite {
+        margin-bottom: 20px;
+    }
+
+    .headingHldrSite p {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 5px !important;
+    }
+
+    .product-card-wrapper .card__inner .card__media {
+        height: 220px;
+    }
+
+    body .swiper .swiper-button-next,
+    body .swiper .swiper-button-prev {
+        height: 25px;
+        width: 25px;
+    }
+
+    body .swiper .swiper-button-next::after,
+    body .swiper .swiper-button-prev::after {
+        font-size: 12px;
+    }
+
+    .product-card-wrapper .card__inner .card__badge {
+        height: 30px;
+        width: 30px;
+        top: 35%;
+    }
+
+    .product-card-wrapper .card__inner .card__badge .badge {
+        font-size: 9px;
+        line-height: 9px;
+    }
+
+    .prodCardBtn a {
+        font-size: 12px;
+        line-height: 13px;
+        padding: 10px;
+    }
+
+    .product-card-wrapper .card__content {
+        margin-top: 10px;
+    }
+
+    .product-card-wrapper .card__content .card__heading {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .product-card-wrapper .card__content .card-information {
+        margin-top: 5px;
+    }
+
+    .product-card-wrapper .card__content .card-information .price__container .price__regular .price-item {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .product-card-wrapper .card__content .card-information .price__container .price__sale .price-item {
+        font-size: 10px;
+        line-height: 10px;
+        padding: 4px 8px 2px;
+    }
+
+    .whyGlide {
+        padding: 100px 0;
+    }
+
+    .whyGlideLeft h3 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .whyGlideLeft p {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 10px;
+    }
+
+    .testimonialMain {
+        padding: 40px 0 20px;
+    }
+
+    body .swiper-pagination .swiper-pagination-bullet-active {
+        width: 45px;
+    }
+
+    .comparisonTable::before {
+        height: 110px;
+    }
+
+    .comparisonTable {
+        padding: 130px 0;
+    }
+
+    .comTbleRow table thead th {
+        padding: 15px 10px;
+    }
+
+    .comTbleRow {
+        overflow: hidden;
+        overflow-x: visible;
+    }
+
+    .comTbleRow table thead th {
+        font-size: 14px;
+        line-height: 15px;
+        text-wrap: nowrap;
+    }
+
+    .comTbleRow table thead tr th:nth-child(2)::before,
+    .comTbleRow table thead tr th:nth-child(3)::before {
+        left: 10px;
+        height: 23px;
+        width: 23px;
+    }
+
+    .comTbleRow table thead tr th:nth-child(2),
+    .comTbleRow table thead tr th:nth-child(3) {
+        padding-left: 40px;
+    }
+
+    .comTbleRow table tbody tr td {
+        padding: 10px;
+    }
+
+    .comTbleRow table tbody tr td:nth-child(2)::before,
+    .comTbleRow table tbody tr td:nth-child(3)::before {
+        left: 10px;
+        height: 16px;
+        width: 16px;
+    }
+
+    .comTbleRow table tbody tr td:nth-child(2),
+    .comTbleRow table tbody tr td:nth-child(3) {
+        padding-left: 34px;
+    }
+
+    .comTbleRow table tbody tr td {
+        font-size: 12px;
+        line-height: 15px;
+        text-wrap: nowrap;
+    }
+
+    .comparisonTable::after {
+        height: 240px;
+    }
+
+    .testiBox {
+        padding: 15px;
+    }
+
+    .ratingsStar img {
+        height: 13px;
+        width: 13px;
+    }
+
+    .ratingsStar {
+        gap: 4px;
+    }
+
+    .descTesti p {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 10px;
+    }
+
+    .testiAuthDet {
+        margin-top: 20px;
+    }
+
+    .tstAuthDetLft img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .tstAuthDetLftSm h4,
+    .tstAuthDetLftSm p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .tstAuthDetRgt {
+        height: 30px;
+        width: 30px;
+    }
+
+    .instaGallSec {
+        margin: 40px 0;
+    }
+
+    .footerTop {
+        padding: 30px 0;
+        margin-top: 40px;
+    }
+
+    .footTopRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footSecBx:not(:first-child) {
+        padding-left: 0;
+    }
+
+    .footSecBx {
+        padding-bottom: 20px;
+    }
+
+    .footSecBx:last-child {
+        padding-bottom: 0;
+    }
+
+    .footSecBx:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #282828;
+    }
+
+    .footSecBx p {
+        max-width: 90%;
+    }
+
+    .footSecBx p:not(:first-child) {
+        margin-top: 7px;
+    }
+
+    .NewsLetterFormFt {
+        margin-top: 20px;
+    }
+
+    .mainFootRowTop {
+        gap: 30px;
+        padding: 30px 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footLeft {
+        grid-column: span 1;
+    }
+
+    .footLinks {
+        margin-left: 0;
+    }
+
+    .footLeft {
+        height: 30px;
+        width: 100px;
+    }
+
+    .footLinks h3 {
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .footLinks ul li a {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .footLinks ul {
+        margin-top: 15px;
+        gap: 5px;
+    }
+
+    .ftpfrmhldr input {
+        height: 35px;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 10px;
+    }
+
+    .ftpfrmhldr input::placeholder {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .ftpfrmhldr .mainBtn {
+        height: 35px;
+        width: 60px;
+        min-width: 60px;
+    }
+
+    .ftpfrmhldr .mainBtn button {
+        padding: 7px;
+    }
+
+    .mainFotBotRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mainFotBotRowleft p {
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    .mainFotBotRowright {
+        margin-right: auto;
+    }
+
+    /* HOME PAGE RESPONSIVE CSS */
+
+}
