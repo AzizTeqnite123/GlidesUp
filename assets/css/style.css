@@ -41,6 +41,11 @@ h6 {
     text-transform: uppercase;
 }
 
+::selection {
+    background: #f7992666;
+    color: #000;
+}
+
 .mainBtn :is(a, button, input[type="submit"]) {
     background: #F79A26;
     color: #fff;
@@ -51,10 +56,40 @@ h6 {
     text-align: center;
     padding: 12px 30px;
     border-radius: 100px;
-    display: block;
     width: fit-content;
     cursor: pointer;
     margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+    transition: all .3s ease-in;
+    z-index: 1;
+    display: block;
+}
+
+.mainBtn :is(a, button, input[type="submit"])::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 10%;
+    background-color: #000;
+    height: 100%;
+    border-radius: 1000px;
+    transition: all .3s linear;
+    z-index: -1;
+}
+
+.mainBtn :is(a, button, input[type="submit"]):hover {
+    color: #fff;
+    background: #000;
+}
+
+.mainBtn :is(a, button, input[type="submit"]):hover::before {
+    right: unset;
+    left: 0;
+    width: 100%;
+    transform: scale(1.2);
+    transition: all .3s linear;
 }
 
 /* MAIN BANNER */
@@ -158,6 +193,7 @@ h6 {
 
 .padBox {
     padding: 30px 20px;
+    padding-right: 10px;
     border-radius: 20px;
     background: #FFF2E4;
     transition: all ease .3s;
@@ -208,10 +244,12 @@ h6 {
 
 .padCnt h3 {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
     letter-spacing: 0%;
     color: #282828;
+    max-width: 194px;
+    text-wrap: balance;
 }
 
 .padCnt p {
@@ -221,6 +259,8 @@ h6 {
     line-height: 16.94px;
     letter-spacing: 0%;
     color: #7b7b7b;
+    max-width: 194px;
+    text-wrap: balance;
 }
 
 /* PADDLE BOARD */
@@ -327,6 +367,34 @@ body .swiper .swiper-button-prev::after {
     border-radius: 100px;
     display: block;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.prodCardBtn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 10%;
+    background-color: #000;
+    height: 100%;
+    border-radius: 1000px;
+    transition: all .3s linear;
+    z-index: -1;
+}
+
+.prodCardBtn a:hover {
+    color: #fff;
+    background: #000;
+}
+
+.prodCardBtn a:hover::before {
+    right: unset;
+    left: 0;
+    width: 100%;
+    transform: scale(1.2);
+    transition: all .3s linear;
 }
 
 .product-card-wrapper .card__content {
@@ -423,11 +491,11 @@ body .swiper .swiper-button-prev::after {
     line-height: 24px;
     letter-spacing: 0%;
     color: #282828;
-    max-width: 600px;
+    text-transform: capitalize;
 }
 
 .whyGlideLeft {
-    max-width: 630px;
+    max-width: 550px;
 }
 
 /* WHY GLIDE */
@@ -561,7 +629,7 @@ body .swiper .swiper-button-prev::after {
 }
 
 body .swiper-pagination {
-    bottom: 0 !important; 
+    bottom: 0 !important;
 }
 
 body .swiper-pagination .swiper-pagination-bullet {
@@ -890,6 +958,34 @@ body .swiper-pagination .swiper-pagination-bullet-active {
     object-fit: contain;
 }
 
+.footSecBx p a {
+    position: relative;
+    width: fit-content;
+}
+
+.footSecBx p a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #282828;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.footSecBx p a:hover {
+    color: #282828;
+    transform: scale(1);
+}
+
+.footSecBx p a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .footSecBx .mainBtn a {
     margin-top: 30px;
 }
@@ -930,13 +1026,26 @@ body .swiper-pagination .swiper-pagination-bullet-active {
 }
 
 .ftpfrmhldr .mainBtn button {
-    margin: 0 !important; 
+    margin: 0 !important;
     border-radius: 0px 100px 100px 0px;
     height: 100%;
     width: 100%;
     border: none;
     padding: 10px;
     outline: none;
+}
+
+.ftpfrmhldr .mainBtn button:hover {
+    background: #000;
+    box-shadow: 0px 4px 20px 0px #F79A26;
+}
+
+.ftpfrmhldr .mainBtn button::before {
+    display: none;
+}
+
+.ftpfrmhldr .mainBtn button:hover img {
+    filter: brightness(0) saturate(100%) invert(67%) sepia(83%) saturate(1308%) hue-rotate(340deg) brightness(98%) contrast(97%);
 }
 
 .ftpfrmhldr .mainBtn button img {
@@ -1005,6 +1114,31 @@ body .swiper-pagination .swiper-pagination-bullet-active {
     line-height: 20px;
     color: #fff;
     font-weight: 400;
+    position: relative;
+    width: fit-content;
+}
+
+.footLinks ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #F79A26;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.footLinks ul li a:hover {
+    color: #F79A26;
+    transform: scale(1);
+}
+
+.footLinks ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .mainFotBotRow {
@@ -1028,14 +1162,14 @@ body .swiper-pagination .swiper-pagination-bullet-active {
 
 .mainFotBotRowright ul {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
 }
 
 .mainFotBotRowright ul li {
-    background: #fff;
-    height: 40px;
-    width: 40px;
+    background: transparent;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
 }
 
@@ -1043,13 +1177,18 @@ body .swiper-pagination .swiper-pagination-bullet-active {
     height: 100%;
     width: 100%;
     display: block;
-    padding: 10px;
 }
 
 .mainFotBotRowright ul li a img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    filter: invert(1);
+    transition: all ease .3s;
+}
+
+.mainFotBotRowright ul li a img:hover {
+    filter: brightness(0) saturate(100%) invert(67%) sepia(83%) saturate(1308%) hue-rotate(340deg) brightness(98%) contrast(97%);
 }
 
 /* MAIN FOOTER  */
