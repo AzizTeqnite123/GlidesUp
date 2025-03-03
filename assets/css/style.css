@@ -24,11 +24,13 @@ img {
 body {
     font-family: "Inter Tight", serif;
     background: #FFFBF6;
+    text-transform: capitalize;
 }
 
 body input,
 body button {
     font-family: "Inter Tight", serif;
+    text-transform: capitalize;
 }
 
 h1,
@@ -166,6 +168,11 @@ h6 {
     margin-bottom: 60px;
 }
 
+.paddleBoard .headingHldrSite p {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .heading_h2 {
     font-weight: 700;
     font-size: 38px;
@@ -273,7 +280,7 @@ h6 {
 }
 
 .shopMainSec .headingHldrSite p {
-    max-width: 460px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -379,11 +386,39 @@ body .swiper .swiper-button-prev::after {
     text-align: center;
     padding: 12px 30px;
     border-radius: 100px;
-    display: block;
-    width: 100% !important;
-    position: relative;
+    width: 100%;
+    cursor: pointer;
     overflow: hidden;
-    margin-top: 0 !important;
+    position: relative;
+    transition: all .3s ease-in;
+    z-index: 1;
+    display: block;
+}
+
+.prodCardBtn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 10%;
+    background-color: #000;
+    height: 100%;
+    border-radius: 1000px;
+    transition: all .3s linear;
+    z-index: -1;
+}
+
+.product-card-wrapper:hover .prodCardBtn a {
+    color: #fff;
+    background: #000;
+}
+
+.product-card-wrapper:hover .prodCardBtn a::before {
+    right: unset;
+    left: 0;
+    width: 100%;
+    transform: scale(1.2);
+    transition: all .3s linear;
 }
 
 .product-card-wrapper .card__content {
@@ -461,6 +496,7 @@ body .swiper .swiper-button-prev::after {
     position: relative;
     background-position: top;
     z-index: 1;
+    overflow: hidden;
 }
 
 .whyGlideRow {
@@ -645,7 +681,7 @@ body .swiper-pagination .swiper-pagination-bullet-active {
 /* COMPARISION TABLE */
 
 .comparisonTable {
-    padding: 330px 0 330px;
+    padding: 350px 0;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;

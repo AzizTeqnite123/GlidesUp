@@ -1,3 +1,5 @@
+AOS.init();
+
 var swiper = new Swiper(".prodSlider", {
   slidesPerView: 4,
   spaceBetween: 30,
