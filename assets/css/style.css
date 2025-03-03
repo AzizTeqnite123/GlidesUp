@@ -400,7 +400,7 @@ body .swiper .swiper-button-prev::after {
     position: absolute;
     top: 0;
     right: -30px;
-    width: 10%;
+    width: 8%;
     background-color: #000;
     height: 100%;
     border-radius: 1000px;

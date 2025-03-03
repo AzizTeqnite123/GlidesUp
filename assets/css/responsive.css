@@ -398,7 +398,9 @@
         font-size: 14px;
         line-height: 18px;
     }
-
+    .mainBanRow .mainBtn a {
+        margin-top: 30px;
+    }
     /* HOME PAGE RESPONSIVE CSS */
 }
 
@@ -656,12 +658,14 @@
     .padCnt h3 {
         font-size: 14px;
         line-height: 14px;
+        max-width: 100%;
     }
 
     .padCnt p {
         margin-top: 5px;
         font-size: 12px;
         line-height: 15px;
+        max-width: 100%;
     }
 
     .shopMainSec {
@@ -736,7 +740,8 @@
 
     .whyGlide {
         padding: 100px 0;
-        background-position: -70px;
+        background-image: url(../img/why-glide-2.jpg) !important;
+        background-position: left bottom;
     }
 
     .whyGlideLeft h3 {
@@ -971,7 +976,7 @@
     }
 
     .whyGlideLeft {
-        max-width: 230px;
+        max-width: 270px;
     }
 
     .padBox:hover {
