@@ -494,10 +494,21 @@ body .swiper .swiper-button-prev::after {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-position: top;
+    background-position: top left;
     z-index: 1;
     overflow: hidden;
-}
+}.whyGlide::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/bottomlayer.png");
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 1;}
 
 .whyGlideRow {
     position: relative;
@@ -746,7 +757,7 @@ body .swiper-pagination .swiper-pagination-bullet-active {
     height: 40px;
     width: 40px;
     left: 30px;
-    top: 50%;
+    top: 48%;
     transform: translateY(-50%);
     position: absolute;
     background-image: url(../img/trofeeic.svg);
@@ -759,7 +770,7 @@ body .swiper-pagination .swiper-pagination-bullet-active {
     height: 40px;
     width: 40px;
     left: 30px;
-    top: 50%;
+    top: 48%;
     transform: translateY(-50%);
     position: absolute;
     background-image: url(../img/crossedlgic.svg);
@@ -1220,3 +1231,112 @@ body .swiper-pagination .swiper-pagination-bullet-active {
 }
 
 /* MAIN FOOTER  */
+
+/* FAQ SECTION */
+
+.faqMain {
+    margin: 120px 0;
+}
+
+.faq__accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.accordion-item {
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    background: #FFF2E4;
+    overflow: hidden;
+}
+
+.accordion-item:has(.active) .accordion-item-header {
+    background: #F79A26;
+}
+
+.accordion-item-header {
+    padding: 30px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-item-header::after {
+    content: "";
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    background-image: url(../img/faqopenic.svg);
+    background-repeat: no-repeat !important;
+    background-position: center center !important ;
+    background-size: 16px !important; 
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: all ease-in-out .3s;
+    background-color: #F79A26;
+}
+
+.accordion-item-header.active::after {
+    content: "";
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.accordion-item:has(.active) .accordion-item-header h5 {
+    color: #fff;
+}
+
+.accordion-item-header h5 {
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.accordion-item:has(.active) .accordion-item-header::after {
+    background: #fff;
+    background-image: url(../img/faqcloseic.svg);
+}
+
+.acc-item-head {
+    max-width: 96%;
+    padding-right: 15px;
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-item-body-content {
+    padding: 30px;
+}
+
+.accordion-item-body-content p {
+    font-family: "Inter Tight";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #7b7b7b;
+}
+
+.accordion-item-body-content p:not(:first-child) {
+    margin-top: 20px;
+}
+
+.accordion-item:has(.active) .accordion-item-body {
+    max-height: max-content;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* FAQ SECTION */

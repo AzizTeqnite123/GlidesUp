@@ -56,3 +56,48 @@ var swiper = new Swiper(".testiSlider", {
     },
   },
 });
+
+// SCRIPT FOR ACCORDIANS FAQS
+
+document.addEventListener('DOMContentLoaded', function () {
+  function faqsAccordion() {
+      var accordionSections = document.querySelectorAll(".faq__accordion");
+
+      accordionSections.forEach(section => {
+          var accordionItemHeaders = section.querySelectorAll(".accordion-item-header");
+
+          if (accordionItemHeaders.length > 0) {
+              var firstAccordionItemHeader = accordionItemHeaders[0];
+              var firstAccordionItemBody = firstAccordionItemHeader.nextElementSibling;
+
+              firstAccordionItemHeader.classList.add("active");
+              firstAccordionItemBody.style.maxHeight = firstAccordionItemBody.scrollHeight + "px";
+          }
+
+          accordionItemHeaders.forEach(accordionItemHeader => {
+              accordionItemHeader.addEventListener("click", event => {
+                  var accordionItemBody = accordionItemHeader.nextElementSibling;
+
+                  accordionItemHeaders.forEach(item => {
+                      if (item !== accordionItemHeader) {
+                          item.classList.remove("active");
+                          item.nextElementSibling.style.maxHeight = 0;
+                      }
+                  });
+
+                  accordionItemHeader.classList.toggle("active");
+
+                  if (accordionItemHeader.classList.contains("active")) {
+                      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                  } else {
+                      accordionItemBody.style.maxHeight = 0;
+                  }
+              });
+          });
+      });
+  }
+
+  faqsAccordion();
+});
+
+// SCRIPT FOR ACCORDIANS FAQS

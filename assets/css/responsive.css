@@ -34,6 +34,15 @@
     }
 
     /* HOME PAGE RESPONSIVE CSS */
+
+    /* FAQ SECTION */
+
+    .faqMain {
+        margin: 100px 0;
+    }
+
+    /* FAQ SECTION */
+
 }
 
 @media only screen and (max-width : 1024px) {
@@ -398,10 +407,41 @@
         font-size: 14px;
         line-height: 18px;
     }
+
     .mainBanRow .mainBtn a {
         margin-top: 30px;
     }
+
     /* HOME PAGE RESPONSIVE CSS */
+
+    /* FAQ SECTION */
+
+    .faqMain {
+        margin: 80px 0;
+    }
+
+    .faq__accordion {
+        gap: 20px;
+    }
+
+    .accordion-item-header,
+    .accordion-item-body-content {
+        padding: 20px;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .accordion-item-header::after {
+        right: 20px;
+        height: 26px;
+        width: 26px;
+        background-size: 14px !important;
+    }
+
+    /* FAQ SECTION */
 }
 
 @media only screen and (max-width : 768px) {
@@ -582,6 +622,36 @@
     }
 
     /* HOME PAGE RESPONSIVE CSS */
+
+    /* FAQ SECTION */
+
+    .faqMain {
+        margin: 60px 0;
+    }
+
+    .accordion-item-header,
+    .accordion-item-body-content {
+        padding: 15px;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .accordion-item-header::after {
+        right: 15px;
+        height: 23px;
+        width: 23px;
+        background-size: 11px !important;
+    }
+
+    .accordion-item-body-content p:not(:first-child) {
+        margin-top: 15px;
+    }
+
+    /* FAQ SECTION */
+
 }
 
 @media only screen and (max-width : 576px) {
@@ -982,6 +1052,40 @@
     .padBox:hover {
         transform: translateY(0px);
     }
+
+    /* FAQ SECTION */
+
+    .faqMain {
+        margin: 40px 0;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .accordion-item-header,
+    .accordion-item-body-content {
+        padding: 15px 10px;
+    }
+
+    .accordion-item-header::after {
+        right: 10px;
+        height: 20px;
+        width: 20px;
+        background-size: 9px !important;
+    }
+
+    .accordion-item-body-content p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .accordion-item-body-content p:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    /* FAQ SECTION */
 
     /* HOME PAGE RESPONSIVE CSS */
 
